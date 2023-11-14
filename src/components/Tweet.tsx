@@ -8,7 +8,7 @@ export const Tweet = () => {
 	return (
 		<div className='flex border p-2 rounded-lg mb-2'>
 			<div className='w-8 h-8 rounded-full flex justify-center items-center bg-slate-700 text-sm font-medium text-white flex-shrink-0'>
-				AD
+				JD
 			</div>
 			<div className='ml-4'>
 				<header className='flex items-center mb-2'>
