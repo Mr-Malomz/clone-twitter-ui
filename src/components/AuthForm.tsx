@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export const AuthForm = () => {
 	const [email, setEmail] = useState<string>('');
