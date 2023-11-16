@@ -1,11 +1,7 @@
 'use client';
 import Link from 'next/link';
-import { useState } from 'react';
-import Link from 'next/link';
 
 export const AuthForm = () => {
-	const [email, setEmail] = useState<string>('');
-	const [password, setPassword] = useState<string>('');
 
 	return (
 		<form className='w-full lg:w-1/2 border px-4 py-8 border-zinc-300 rounded-lg bg-white'>
@@ -21,8 +17,7 @@ export const AuthForm = () => {
 					className='w-full border h-10 rounded-lg border-zinc-300 p-4'
 					placeholder='input email'
 					required
-					value={email}
-					onChange={(e) => setEmail(e.target.value)}
+					name='email'
 				/>
 			</fieldset>
 			<fieldset className='mb-4'>
@@ -34,8 +29,7 @@ export const AuthForm = () => {
 					className='w-full border h-10 rounded-lg border-zinc-300 p-4'
 					placeholder='input password'
 					required
-					value={password}
-					onChange={(e) => setPassword(e.target.value)}
+					name='password'
 				/>
 			</fieldset>
 			<button className='py-1 px-4 w-full h-10 rounded-lg text-white bg-zinc-800 hover:bg-zinc-900'>
