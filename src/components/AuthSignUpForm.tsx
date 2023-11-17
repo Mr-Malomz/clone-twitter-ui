@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import { Button } from './ui/Button';
 
 export const AuthSignUpForm = () => {
 	return (
@@ -43,9 +44,7 @@ export const AuthSignUpForm = () => {
 					name='password'
 				/>
 			</fieldset>
-			<button className='py-1 px-4 w-full h-10 rounded-lg text-white bg-zinc-800 hover:bg-zinc-900'>
-				'Sign up'
-			</button>
+			<Button title='Sign up' />
 			<p className='text-center text-sm text-gray-800 mt-4'>
 				Already have an account?{' '}
 				<Link href='/' className='font-medium hover:text-gray-950'>
