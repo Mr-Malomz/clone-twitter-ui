@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { Button } from './ui/Button';
+import { Input } from './ui/Input';
 
 export const AuthSignUpForm = () => {
 	return (
@@ -12,36 +13,22 @@ export const AuthSignUpForm = () => {
 				<label htmlFor='name' className='block text-sm mb-1'>
 					Name
 				</label>
-				<input
-					type='name'
-					className='w-full border h-10 rounded-lg border-zinc-300 p-4'
-					placeholder='input name'
-					required
-					name='name'
-				/>
+				<Input type='text' name='name' placeholder='input name' />
 			</fieldset>
 			<fieldset className='mb-4'>
 				<label htmlFor='email' className='block text-sm mb-1'>
 					Email
 				</label>
-				<input
-					type='email'
-					className='w-full border h-10 rounded-lg border-zinc-300 p-4'
-					placeholder='input email'
-					required
-					name='email'
-				/>
+				<Input type='email' name='email' placeholder='input email' />
 			</fieldset>
 			<fieldset className='mb-4'>
 				<label htmlFor='password' className='block text-sm mb-1'>
 					Password
 				</label>
-				<input
+				<Input
 					type='password'
-					className='w-full border h-10 rounded-lg border-zinc-300 p-4'
-					placeholder='input password'
-					required
 					name='password'
+					placeholder='input password'
 				/>
 			</fieldset>
 			<Button title='Sign up' />

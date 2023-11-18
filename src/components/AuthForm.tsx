@@ -1,9 +1,9 @@
 'use client';
 import Link from 'next/link';
 import { Button } from './ui/Button';
+import { Input } from './ui/Input';
 
 export const AuthForm = () => {
-
 	return (
 		<form className='w-full lg:w-1/2 border px-4 py-8 border-zinc-300 rounded-lg bg-white'>
 			<h3 className='text-base lg:text-lg font-medium mb-6 text-center'>
@@ -13,24 +13,16 @@ export const AuthForm = () => {
 				<label htmlFor='email' className='block text-sm mb-1'>
 					Email
 				</label>
-				<input
-					type='email'
-					className='w-full border h-10 rounded-lg border-zinc-300 p-4'
-					placeholder='input email'
-					required
-					name='email'
-				/>
+				<Input type='email' name='email' placeholder='input email' />
 			</fieldset>
 			<fieldset className='mb-4'>
 				<label htmlFor='password' className='block text-sm mb-1'>
 					Password
 				</label>
-				<input
+				<Input
 					type='password'
-					className='w-full border h-10 rounded-lg border-zinc-300 p-4'
-					placeholder='input password'
-					required
 					name='password'
+					placeholder='input password'
 				/>
 			</fieldset>
 			<Button title='Sign up' />
