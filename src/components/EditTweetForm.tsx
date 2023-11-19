@@ -1,7 +1,8 @@
 'use client';
 import { Button } from './ui/Button';
 
-export const TweetForm = () => {
+
+export const EditTweetForm = () => {
 	return (
 		<form action=''>
 			<textarea
@@ -13,7 +14,7 @@ export const TweetForm = () => {
 			/>
 			<div className='flex justify-end'>
 				<div>
-					<Button title='Post' />
+					<Button title='Update' />
 				</div>
 			</div>
 		</form>
