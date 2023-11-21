@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import { useFormStatus } from 'react-dom';
 
-type IButton = {
+type ButtonType = {
     title: string
 }
 
-export const Button:FC<IButton> = ({title}) => {
+export const Button:FC<ButtonType> = ({title}) => {
 	const { pending } = useFormStatus();
 	return (
 		<button

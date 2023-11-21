@@ -1,12 +1,12 @@
 import { FC } from 'react';
 
-type IInput = {
+type InputType = {
 	type: string;
 	placeholder: string;
 	name: string;
 };
 
-export const Input: FC<IInput> = ({ type, name, placeholder }) => {
+export const Input: FC<InputType> = ({ type, name, placeholder }) => {
 	return (
 		<input
 			type={type}
