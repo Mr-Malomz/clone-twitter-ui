@@ -1,4 +1,4 @@
-import { Pencil } from 'lucide-react';
+import { Heart, MessageCircle, Pencil, Repeat2 } from 'lucide-react';
 import Link from 'next/link';
 import { DeleteButton } from './ui/DeleteButton';
 
@@ -33,6 +33,18 @@ export const TweetComp = () => {
 						<input type='hidden' name='id' value='' />
 						<DeleteButton />
 					</form>
+					<button className='flex items-center border py-1 px-2 rounded-lg hover:bg-zinc-300'>
+						<Repeat2 className='h-4 w-4' />
+						<p className='ml-2 text-sm'>Repost</p>
+					</button>
+					<button className='flex items-center border py-1 px-2 rounded-lg hover:bg-zinc-300'>
+						<Heart className='h-4 w-4' />
+						<p className='ml-2 text-sm'>Like</p>
+					</button>
+					<button className='flex items-center border py-1 px-2 rounded-lg hover:bg-zinc-300'>
+						<MessageCircle className='h-4 w-4' />
+						<p className='ml-2 text-sm'>Reply</p>
+					</button>
 				</div>
 			</div>
 		</div>
