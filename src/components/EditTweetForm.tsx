@@ -12,6 +12,7 @@ export const EditTweetForm = () => {
 				className='w-full border rounded-lg mb-2 p-4'
 				placeholder='What is happening'
 			/>
+			<input type='hidden' name='id' value='' />
 			<div className='flex justify-end'>
 				<div>
 					<Button title='Update' />
